@@ -14,7 +14,7 @@ This plugin enables users to generate Docx file quickly and efficiently.
   - Customizable line heights (Single, 1.15, 1.25, 1.5, Double). 
   - Customizable font size.
   - Customizable font family.
-  - Page orientation.
+  - Page orientation (Portrait, Landscape).
 
 👉 **Note:** 
 - A plugin server must be set up to use this feature. Follow the detailed guide to set up a plugin server on Render: [How to Deploy Plugins Server on Render](https://docs.typingmind.com/plugins/plugins-server/how-to-deploy-plugins-server-on-render)
