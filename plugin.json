@@ -1,10 +1,9 @@
 {
     "id": "generate_word_file",
-    "code": "",
     "uuid": "b634fc80-9419-40de-8044-708268c26141",
     "emoji": "🧩",
     "title": "Word Generator",
-    "iconURL": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Icon-Word-28x281?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=100",
+    "iconURL": "https://custom.typingmind.com/assets/plugins/microsoft-word.webp",
     "disabled": false,
     "httpAction": {
         "id": "8e520cf2-112d-4c06-9c86-026138549ac0",
@@ -146,7 +145,7 @@
                 }
             }
         },
-        "description": "Generate a Word document based on the given sections, title, header, and footer, and return the URL for downloading it."
+        "description": "Generate a Word document based on the given sections, title, header, and footer, and return the URL for downloading it. If the download url is not present in the response, inform the user that the Word file could not be generated. Prompt the user to verify that the correct plugin server URL is being used."
     },
     "outputType": "respond_to_ai",
     "oauthConfig": null,
