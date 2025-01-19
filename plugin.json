@@ -48,12 +48,18 @@
                 },
                 "sections": {
                     "type": "array",
+                    "description": "An array of sections that make up the document structure. Each section can include content, a heading, and optionally reference a parent section to create a hierarchical structure.",
                     "items": {
                         "type": "object",
                         "required": [
+                            "sectionId",
                             "content"
                         ],
                         "properties": {
+                            "sectionId": {
+                                "type": "string",
+                                "description": "A unique identifier for the section."
+                            },
                             "content": {
                                 "type": "array",
                                 "items": {
@@ -117,12 +123,9 @@
                                 "type": "string",
                                 "description": "The heading of the section."
                             },
-                            "subSections": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "#/parameters/properties/sections/items"
-                                },
-                                "description": "Nested sub-sections within this section."
+                            "parentSectionId": {
+                                "type": "string",
+                                "description": "The unique identifier of a parent section, if this section is a child of another. Leave empty if this section has no parent."
                             },
                             "headingLevel": {
                                 "type": "integer",
